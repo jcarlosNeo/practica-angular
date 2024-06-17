@@ -1,0 +1,46 @@
+.dashboard-container {
+  background-color: #343a40;
+  min-height: 100vh;
+  padding: 40px;
+  color: #ffffff;
+
+  .card {
+    border: none;
+    border-radius: 10px;
+    background-color: #212529;
+    color: #ffffff;
+
+    .card-title {
+      font-size: 1.5rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+    }
+
+    .btn {
+      background-color: #007bff;
+      border: none;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .btn-success {
+      background-color: #28a745;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+
+      &:hover {
+        background-color: #5a6268;
+      }
+    }
+  }
+}

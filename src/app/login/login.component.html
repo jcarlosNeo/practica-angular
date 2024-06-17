@@ -1,0 +1,24 @@
+<div class="login-container d-flex align-items-center justify-content-center min-vh-100">
+  <div class="login-box p-4 shadow">
+    <h2 class="text-center">Iniciar Sesión</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group mb-3">
+        <label for="email" class="form-label">Correo Electrónico:</label>
+        <input type="email" id="email" class="form-control" formControlName="email" required>
+        <div *ngIf="submitted && f['email'].errors" class="text-danger">
+          <div *ngIf="f['email'].errors['required']">El correo electrónico es obligatorio</div>
+          <div *ngIf="f['email'].errors['email']">El correo electrónico no es válido</div>
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label for="password" class="form-label">Contraseña:</label>
+        <input type="password" id="password" class="form-control" formControlName="password" required>
+        <div *ngIf="submitted && f['password'].errors" class="text-danger">
+          <div *ngIf="f['password'].errors['required']">La contraseña es obligatoria</div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+    </form>
+    <div *ngIf="errorMessage" class="text-danger text-center mt-3">{{ errorMessage }}</div>
+  </div>
+</div>

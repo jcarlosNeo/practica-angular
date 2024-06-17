@@ -1,0 +1,34 @@
+.user-form-container {
+  background-color: #343a40;
+  min-height: 100vh;
+  padding: 40px;
+  color: #ffffff;
+
+  .form-control {
+    background-color: #495057;
+    color: #ffffff;
+    border: 1px solid #6c757d;
+  }
+
+  .form-control:focus {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+
+  .form-label {
+    color: #ffffff;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .img-thumbnail {
+    border: none;
+  }
+}
